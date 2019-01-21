@@ -5,7 +5,7 @@ const fs = require('fs')
 const mmss = require('ms');
 var prefix = "-";
 
-client.on('ready', () => {
+client.on('ready', () => }
     console.log('I am ready!');
 });
 ////////////////////////////////////////////////////////////ده السورس الاساسي
