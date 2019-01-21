@@ -3,7 +3,7 @@ const client = new Discord.Client();
 const moment = require("moment");
 const fs = require('fs')
 const mmss = require('ms');
-var prefix = "البرفيكس هنا";///البرفيكس بتاع البوت ده البرفيكس الاساسي
+var prefix = "-";
 
 client.on('ready', () => {
     console.log('I am ready!');
@@ -19,7 +19,7 @@ client.on('ready', () => {
 /////////////////////////////////////////////اوامر عامه
 
 client.on('message' , message => {/// ده كود الهيلب
-if(message.content === '%help') {// دي الكلمه البيكتبها
+if(message.content === '-help') {// دي الكلمه البيكتبها
   var EsTeKnAN = new Discord.RichEmbed()
   .setColor('RANDOM')/// وتحت الرساله البتجيه تقضر تعدل الرساله براحتك
 message.author.send(`
@@ -49,19 +49,19 @@ message.author.send(`
 
 client.on('ready', () => {///ده كود الستريمنق
    console.log(`----------------`);
-      console.log(`Desert Bot- Script By : i1Suhaib`);
+      console.log(`Desert Bot- Script By : Master Server`);
         console.log(`----------------`);
-      console.log(`ON ${client.guilds.size} Servers '     Script By : i1Suhaib ' `);
+      console.log(`ON ${client.guilds.size} Servers '     Script By : Master Server ' `);
     console.log(`----------------`);
   console.log(`Logged in as ${client.user.tag}!`);
-client.user.setGame(`%help | By hassan_games`,"http://twitch.tv/S-F")/// هنا تقضر تغير بدلا من %help | By hassan_games
+client.user.setGame(`Master Server`,"http://twitch.tv/S-F")/// هنا تقضر تغير بدلا من %help | By hassan_games
 client.user.setStatus("dnd")
 });///نهايت الكود
 
 
 
 client.on('message', message => {
-            if (message.content.startsWith("%help")) {///ده لما يكتب %help يقلو تم ارسال الرساله الي الخاص
+            if (message.content.startsWith("-help")) {///ده لما يكتب %help يقلو تم ارسال الرساله الي الخاص
      let embed = new Discord.RichEmbed()
 .setThumbnail(message.author.avatarURL)
 .addField('     Help ' ,' **تم ارسال الاوامر الي الخاص ✉**')/// تقضر تعدل  الرساله
@@ -73,7 +73,7 @@ client.on('message', message => {
 
 
 client.on('message', function(msg) {///ده كود معلومات السيرفر
-    const prefix = '%'
+    const prefix = '-'
     if(msg.content.startsWith (prefix  + 'server')) {/// دي الرساله البيكتبها
       let embed = new Discord.RichEmbed()
       .setColor('RANDOM')
